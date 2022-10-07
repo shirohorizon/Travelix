@@ -1,0 +1,29 @@
+:root {
+  --primary: #350a4e;
+  --primary-2: #fa9e1c;
+  --white: #fff;
+
+  --top-bar-height: 36px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}

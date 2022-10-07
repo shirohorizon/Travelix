@@ -1,0 +1,72 @@
+/* Reset CSS */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* PC > 1200px */
+  --grid-width-pc: 1140px;
+  /* Tablet > 992 px */
+  --grid-width-tablet: 960px;
+  /* Smart Phone > 768px */
+  --grid-width-phone: 720px;
+  /* Small Smart Phone > 576px */
+  --grid-width-small-phone: 540px;
+}
+
+/* Grid System  */
+
+/* Grid */
+
+.grid {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 576px) {
+  .grid {
+    max-width: var(--grid-width-small-phone);
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    max-width: var(--grid-width-phone);
+  }
+}
+
+@media (min-width: 992px) {
+  .grid {
+    max-width: var(--grid-width-tablet);
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid {
+    max-width: var(--grid-width-pc);
+  }
+}
+
+/* Row */
+.row {
+  display: flex;
+  flex-flow: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* Col */
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+/* Gut */

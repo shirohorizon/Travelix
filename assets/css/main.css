@@ -1,0 +1,151 @@
+/*
+* APP
+* I. Header
+*   I.1 top_bar
+*       I.1.1 phone
+*       I.1.2 socials
+*       I.1.3 user_box
+*/
+
+.app {
+}
+
+/* Header */
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: rgba(53, 19, 83, 0.6);
+  z-index: 100;
+}
+
+.header.scrolled .top_bar {
+  visibility: hidden;
+  opacity: 0;
+  height: 0px;
+}
+
+/* I.1 Top bar */
+.top_bar {
+  width: 100%;
+  height: var(--top-bar-height);
+  background: #350a4e;
+  transition: all ease 0.4;
+  -webkit-transition: all ease 0.4;
+  -moz-transition: all ease 0.4;
+  -ms-transition: all ease 0.4;
+  -o-transition: all ease 0.4;
+}
+
+.top_bar .wrapper {
+  display: flex;
+  justify-content: center;
+}
+/* I.1.1 phone*/
+.top_bar .phone {
+  color: var(--white);
+  font-size: 1rem;
+  line-height: var(--top-bar-height);
+  margin-right: 36px;
+}
+/* I.1.2 social*/
+
+.top_bar .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social .social_list {
+  display: flex;
+  height: 100%;
+}
+
+.social .socials_item {
+  height: 100%;
+}
+
+.social .socials_item a {
+  display: inline-block;
+  height: 100%;
+  padding: 0px 10px;
+  font-size: 1.2rem;
+  line-height: var(--top-bar-height);
+  color: var(--white);
+}
+
+.social .socials_item:hover a {
+  color: var(--primary-2);
+}
+/* I.1.3 user_box */
+
+.top_bar .user_box {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.user_box_link {
+  text-transform: uppercase;
+}
+
+.user_box_link a {
+  display: block;
+  font-size: 1rem;
+  line-height: var(--top-bar-height);
+  font-weight: 600;
+  color: var(--white);
+}
+
+.user_box_link:hover a {
+  color: var(--primary-2);
+}
+
+.user_box_login {
+  position: relative;
+  margin-right: 15px;
+}
+
+.user_box_login::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: -9px;
+  width: 1px;
+  display: block;
+  height: calc(var(--top-bar-height) - 27px);
+  background-color: var(--white);
+}
+
+/* End: Header */
+
+.home {
+}
+
+.search {
+}
+
+.intro {
+}
+
+.cta {
+}
+
+.offer {
+}
+
+.testimonials {
+}
+
+.trending {
+}
+
+.contact {
+}
+
+.footer {
+}
+
+.copyright {
+}
