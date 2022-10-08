@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@font-face {
+  font-family: "Beyond";
+  src: url(/assets/fonts/beyond_the_mountains.otf) format("truetype"),
+    url(/assets/fonts/beyond_the_mountains.ttf) format("opentype");
+}
 :root {
   --primary: #350a4e;
   --primary-2: #fa9e1c;
@@ -20,6 +25,8 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+  background: #ffffff;
+  color: #a5a5a5;
 }
 
 a {
@@ -28,4 +35,11 @@ a {
 
 li {
   list-style: none;
+}
+
+.btn {
+  display: inline-block;
+  height: 53px;
+  border-radius: 27px;
+  overflow: hidden;
 }
