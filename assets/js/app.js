@@ -3,7 +3,7 @@ const header = document.querySelector('.header')
 const topBar = document.querySelector('.top_bar')
 
 const handleGetScrollY = () => {
-    if (window.scrollY > 400) {
+    if (window.scrollY > 150) {
         header.classList.add('scrolled')
     } else {
         header.classList.remove('scrolled')
@@ -93,3 +93,16 @@ nextSliderBtn.onclick = () => {
 prevSliderBtn.onclick = () => {
     setSliderTransform('prev')
 }
+
+
+// Search
+const searchTabs = document.querySelectorAll('.search_tab')
+
+function handleSetActiveSearchTab() {
+    searchTabs.forEach(e => e.classList.remove('active'))
+    this.classList.add('active')
+}
+
+searchTabs.forEach(e => {
+    e.addEventListener('click', handleSetActiveSearchTab)
+})
