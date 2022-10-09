@@ -106,3 +106,22 @@ function handleSetActiveSearchTab() {
 searchTabs.forEach(e => {
     e.addEventListener('click', handleSetActiveSearchTab)
 })
+
+// set bg_intro
+const bgURLs = [
+    {
+        src: '/assets/images/intro_1.jpg'
+    },
+    {
+        src: '/assets/images/intro_2.jpg'
+    },
+    {
+        src: '/assets/images/intro_3.jpg'
+    },
+]
+
+const introItems = document.querySelectorAll('.intro_item_background')
+
+introItems.forEach((e, index) => {
+    e.style.backgroundImage = `url('${bgURLs[index].src}')`
+})

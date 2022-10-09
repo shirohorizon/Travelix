@@ -40,6 +40,10 @@ li {
 .fill-height {
   height: 100%;
 }
+
+.text-center {
+  text-align: center !important;
+}
 /* btn */
 
 .btn {
@@ -61,6 +65,19 @@ li {
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
+}
+
+.btn a {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 53px;
+  padding-left: 46px;
+  padding-right: 46px;
+  white-space: nowrap;
+  z-index: 2;
 }
 
 .btn_black {
@@ -88,4 +105,8 @@ li {
 }
 .btn span:nth-child(3) {
   opacity: 0.4;
+}
+
+.btn:hover .btn_background {
+  left: -100%;
 }
