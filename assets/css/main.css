@@ -295,11 +295,21 @@
 .slider_stage {
     height: 100%;
     display: flex;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
 }
 .slider_item {
     position: relative;
     height: 100%;
     display: inline-block;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
 }
 .slider_background {
     background-image: url(/assets/images/home_slider.jpg);
@@ -388,7 +398,7 @@
     margin-top: 70px;
 }
 
-.home_slider_nav {
+.slider_nav {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -741,6 +751,100 @@
 
 /* CTA */
 .cta {
+    position: relative;
+    padding-top: 125px;
+    padding-bottom: 116px;
+    background: linear-gradient(to right, #fa9e1b, #8d4fff);
+}
+
+.cta_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/images/cta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.27;
+}
+.cta_btn {
+    position: relative;
+    z-index: 0;
+}
+
+.cta_slider {
+    position: relative;
+}
+.cta_stage_outer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.cta_stage {
+    position: relative;
+    height: 100%;
+    display: flex;
+    transition: all 0.4s ease;
+}
+
+.cta_slider_item {
+    height: 100%;
+    padding: 75px 90px 61px 90px;
+    background: #fff;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.cta_title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2d2c2c;
+    text-transform: uppercase;
+}
+
+.rating_r i {
+    font-size: 1.6rem;
+}
+
+.cta_rating_item + .cta_rating_item {
+    margin-left: 4px;
+}
+
+.cta_text {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2.29;
+    margin-top: 14px;
+    margin-bottom: 0px;
+}
+
+.cta_btn {
+    margin-top: 38px;
+}
+
+.cta_slider_prev {
+    left: -50px;
+    z-index: 10;
+}
+
+.cta_slider_next {
+    right: -50px;
+    z-index: 10;
+}
+
+.cta_slider_next:hover .nav_path,
+.cta_slider_next:hover .nav_arrow {
+    fill: url(#cta_grad_next);
+}
+
+.cta_slider_prev:hover .nav_path,
+.cta_slider_prev:hover .nav_arrow {
+    fill: url(#cta_grad_prev);
 }
 /* End: CTA */
 

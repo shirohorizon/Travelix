@@ -28,6 +28,76 @@ searchIcon.onclick = () => {
     window.addEventListener('click', handleCloseSearchForm)
 }
 
+// slider ulti
+function slider(stage, sliderItems, itemWidth, sliderDots) {
+    let stageWidth
+
+    const setWidth = (width) => {
+        stageWidth = width * sliderItems.length
+        stage.style.width = `${stageWidth}px`
+
+        sliderItems.forEach(e => {
+            e.style.width = `${width}px`
+        })
+    }
+
+    setWidth(itemWidth)
+
+
+    const getActiveIndex = () => {
+        let activeIndex
+
+        // get activeIndex and remove all active
+        sliderItems.forEach((e, index) => {
+            if (e.classList.contains('active')) {
+                activeIndex = index
+            }
+        })
+
+        // set activeIndex = 0 if no active class
+        return activeIndex = activeIndex ? activeIndex : 0
+    }
+
+    let activeIndex = getActiveIndex()
+
+    const setActive = index => {
+        sliderItems.forEach(e => e.classList.remove('active'))
+        activeIndex = index
+        activeIndex = activeIndex <= sliderItems.length - 1 ? activeIndex : 0
+        activeIndex = activeIndex >= 0 ? activeIndex : sliderItems.length - 1
+
+        if (sliderDots) {
+            sliderDots.forEach(e => e.classList.remove('active'))
+            sliderDots[activeIndex].classList.add('active')
+        }
+
+        sliderItems[activeIndex].classList.add('active')
+        return index
+    }
+
+    let transX = activeIndex * itemWidth
+
+    const setStageTranslateX = (transX, duration = 800) => {
+        stage.style = `width: ${stageWidth}px ;transform: translateX(-${transX}px); transition: all ${duration / 1000}s ease;`
+    }
+
+    const next = duration => {
+        setActive(activeIndex + 1)
+        setStageTranslateX(itemWidth * activeIndex, duration)
+    }
+
+    const prev = duration => {
+        setActive(activeIndex - 1)
+        setStageTranslateX(itemWidth * activeIndex, duration)
+    }
+
+    return {
+        next,
+        prev,
+        setWidth
+    }
+}
+
 // home slider
 const prevSliderBtn = document.querySelector('.home_slider_prev')
 const nextSliderBtn = document.querySelector('.home_slider_next')
@@ -35,64 +105,43 @@ const sliderStage = document.querySelector('.slider_stage')
 const sliderItems = document.querySelectorAll('.slider_item')
 const sliderCustomDots = document.querySelectorAll('.slider_custom_dot')
 
-// set stage width 
-const setWidthSlider = () => {
-    const stageWidth = window.innerWidth * sliderItems.length
-    const sliderWidth = window.innerWidth
-    sliderStage.style.width = `${stageWidth}px`
 
-    sliderItems.forEach(e => {
-        e.style.width = `${sliderWidth}px`
-    })
 
-    return [stageWidth, sliderWidth]
-}
-setWidthSlider()
-// set width when resize
-window.addEventListener('resize', setWidthSlider)
-
-// get 'next' or 'prev' string param return new active index
-const setActiveSlider = (control) => {
-    let activeIndex
-
-    // get prev active index and remove all active
-    sliderItems.forEach((e, index) => {
-        if (e.classList.contains('active')) {
-            activeIndex = index
-        }
-        e.classList.remove('active')
-    })
-
-    sliderCustomDots.forEach(e => e.classList.remove('active'))
-
-    // set active index when next btn or prev btn click
-    if (control === 'next') {
-        activeIndex = activeIndex < sliderItems.length - 1 ? activeIndex + 1 : 0
-    } else if (control === 'prev') {
-        activeIndex = activeIndex > 0 ? activeIndex - 1 : sliderItems.length - 1
-    }
-
-    // set active
-    sliderItems[activeIndex].classList.add('active')
-    sliderCustomDots[activeIndex].classList.add('active')
-    return activeIndex
-}
-
-const setSliderTransform = (control) => {
-    const [stageWidth, sliderWidth] = setWidthSlider()
-    const tranX = sliderWidth * setActiveSlider(control)
-    sliderStage.style = `width: ${stageWidth}px ;transform: translateX(-${tranX}px); transition: all 0.8s ease;`
-}
+const homeSlider = slider(sliderStage, sliderItems, window.innerWidth, sliderCustomDots)
 
 // next btn
 nextSliderBtn.onclick = () => {
-    setSliderTransform('next')
+    homeSlider.next()
 }
 
 // prev btn
 prevSliderBtn.onclick = () => {
-    setSliderTransform('prev')
+    homeSlider.prev()
 }
+
+const ctaSliderPrev = document.querySelector('.cta_slider_prev')
+const ctaSliderNext = document.querySelector('.cta_slider_next')
+const ctaStage = document.querySelector('.cta_stage')
+const ctaSliderItems = document.querySelectorAll('.cta_slider_item')
+const ctaStageOuter = document.querySelector('.cta_stage_outer')
+
+const ctaSlider = slider(ctaStage, ctaSliderItems, ctaStageOuter.clientWidth)
+
+ctaSliderNext.onclick = () => {
+    console.log('haha');
+    ctaSlider.next()
+}
+ctaSliderPrev.onclick = () => {
+    ctaSlider.prev()
+}
+
+const handleResetWidth = () => {
+    homeSlider.setWidth(window.innerWidth)
+    ctaSlider.setWidth(ctaStageOuter.clientWidth)
+}
+
+// set width when resize
+window.addEventListener('resize', handleResetWidth)
 
 
 // Search
