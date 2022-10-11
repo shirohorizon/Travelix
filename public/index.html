@@ -1,904 +1,1059 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon" />
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon" />
 
-        <!-- fontAwesome icon -->
-        <link rel="stylesheet" href="../assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css" />
-        <!-- Grid System -->
-        <link rel="stylesheet" href="../assets/css/base.css" />
+      <!-- fontAwesome icon -->
+      <link rel="stylesheet" href="../assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css" />
+      <!-- Grid System -->
+      <link rel="stylesheet" href="../assets/css/base.css" />
 
-        <link rel="stylesheet" href="../assets/css/grid.css" />
-        <link rel="stylesheet" href="../assets/css/main.css" />
-        <title>Travelix</title>
-    </head>
-    <body>
-        <div class="app">
-            <!-- Begin: Header -->
-            <header class="header">
-                <!-- top bar -->
-                <div class="top_bar">
-                    <div class="grid">
-                        <div class="row">
-                            <div class="col wrapper">
-                                <div class="phone">+84 966 850 047</div>
-                                <div class="social">
-                                    <ul class="social_list">
-                                        <li class="socials_item">
-                                            <a href="#">
-                                                <i class="fa-brands fa-pinterest"></i>
-                                            </a>
-                                        </li>
-                                        <li class="socials_item">
-                                            <a href="#">
-                                                <i class="fa-brands fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li class="socials_item">
-                                            <a href="#">
-                                                <i class="fa-brands fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="socials_item">
-                                            <a href="#">
-                                                <i class="fa-brands fa-dribbble"></i>
-                                            </a>
-                                        </li>
-                                        <li class="socials_item">
-                                            <a href="#">
-                                                <i class="fa-brands fa-behance"></i>
-                                            </a>
-                                        </li>
-                                        <li class="socials_item">
-                                            <a href="#">
-                                                <i class="fa-brands fa-linkedin-in"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="user_box">
-                                    <div class="user_box_login user_box_link">
-                                        <a href="#">login</a>
-                                    </div>
-                                    <div class="user_box_register user_box_link">
-                                        <a href="#">register</a>
-                                    </div>
-                                </div>
-                            </div>
+      <link rel="stylesheet" href="../assets/css/grid.css" />
+      <link rel="stylesheet" href="../assets/css/main.css" />
+      <title>Travelix</title>
+   </head>
+   <body>
+      <div class="app">
+         <!-- Begin: Header -->
+         <header class="header">
+            <!-- top bar -->
+            <div class="top_bar">
+               <div class="grid">
+                  <div class="row">
+                     <div class="col wrapper">
+                        <div class="phone">+84 966 850 047</div>
+                        <div class="social">
+                           <ul class="social_list">
+                              <li class="socials_item">
+                                 <a href="#">
+                                    <i class="fa-brands fa-pinterest"></i>
+                                 </a>
+                              </li>
+                              <li class="socials_item">
+                                 <a href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                 </a>
+                              </li>
+                              <li class="socials_item">
+                                 <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                 </a>
+                              </li>
+                              <li class="socials_item">
+                                 <a href="#">
+                                    <i class="fa-brands fa-dribbble"></i>
+                                 </a>
+                              </li>
+                              <li class="socials_item">
+                                 <a href="#">
+                                    <i class="fa-brands fa-behance"></i>
+                                 </a>
+                              </li>
+                              <li class="socials_item">
+                                 <a href="#">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                 </a>
+                              </li>
+                           </ul>
                         </div>
-                    </div>
-                </div>
+                        <div class="user_box">
+                           <div class="user_box_login user_box_link">
+                              <a href="#">login</a>
+                           </div>
+                           <div class="user_box_register user_box_link">
+                              <a href="#">register</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
 
-                <!-- main nav -->
-                <nav class="main_nav">
-                    <div class="grid">
-                        <div class="row">
-                            <div class="col wrapper">
-                                <div class="logo">
-                                    <a href="#">
-                                        <img src="../assets/images/logo.png" alt="logo" />
-                                        travelix
-                                    </a>
-                                </div>
-                                <div class="main_nav_container">
-                                    <ul class="main_nav_list">
-                                        <li class="main_nav_item"><a href="#">Home</a></li>
-                                        <li class="main_nav_item"><a href="#">About Us</a></li>
-                                        <li class="main_nav_item"><a href="#">Offers</a></li>
-                                        <li class="main_nav_item"><a href="#">News</a></li>
-                                        <li class="main_nav_item"><a href="#">Contact</a></li>
-                                    </ul>
-                                </div>
-                                <div class="content_search">
-                                    <svg
-                                        version="1.1"
-                                        id="Layer_1"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        x="0px"
-                                        y="0px"
-                                        width="17px"
-                                        height="17px"
-                                        viewBox="0 0 512 512"
-                                        enable-background="new 0 0 512 512"
-                                        xml:space="preserve"
-                                    >
-                                        <g>
-                                            <g>
-                                                <g>
-                                                    <path
-                                                        class="mag_glass"
-                                                        fill="currentColor"
-                                                        d="M78.438,216.78c0,57.906,22.55,112.343,63.493,153.287c40.945,40.944,95.383,63.494,153.287,63.494
+            <!-- main nav -->
+            <nav class="main_nav">
+               <div class="grid">
+                  <div class="row">
+                     <div class="col wrapper">
+                        <div class="logo">
+                           <a href="#">
+                              <img src="../assets/images/logo.png" alt="logo" />
+                              travelix
+                           </a>
+                        </div>
+                        <div class="main_nav_container">
+                           <ul class="main_nav_list">
+                              <li class="main_nav_item"><a href="#">Home</a></li>
+                              <li class="main_nav_item"><a href="#">About Us</a></li>
+                              <li class="main_nav_item"><a href="#">Offers</a></li>
+                              <li class="main_nav_item"><a href="#">News</a></li>
+                              <li class="main_nav_item"><a href="#">Contact</a></li>
+                           </ul>
+                        </div>
+                        <div class="content_search">
+                           <svg
+                              version="1.1"
+                              id="Layer_1"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              x="0px"
+                              y="0px"
+                              width="17px"
+                              height="17px"
+                              viewBox="0 0 512 512"
+                              enable-background="new 0 0 512 512"
+                              xml:space="preserve"
+                           >
+                              <g>
+                                 <g>
+                                    <g>
+                                       <path
+                                          class="mag_glass"
+                                          fill="currentColor"
+                                          d="M78.438,216.78c0,57.906,22.55,112.343,63.493,153.287c40.945,40.944,95.383,63.494,153.287,63.494
                                                 s112.344-22.55,153.287-63.494C489.451,329.123,512,274.686,512,216.78c0-57.904-22.549-112.342-63.494-153.286
                                                 C407.563,22.549,353.124,0,295.219,0c-57.904,0-112.342,22.549-153.287,63.494C100.988,104.438,78.439,158.876,78.438,216.78z
                                                 M119.804,216.78c0-96.725,78.69-175.416,175.415-175.416s175.418,78.691,175.418,175.416
                                                 c0,96.725-78.691,175.416-175.416,175.416C198.495,392.195,119.804,313.505,119.804,216.78z"
-                                                    ></path>
-                                                </g>
-                                            </g>
-                                            <g>
-                                                <g>
-                                                    <path
-                                                        class="mag_glass"
-                                                        fill="currentColor"
-                                                        d="M6.057,505.942c4.038,4.039,9.332,6.058,14.625,6.058s10.587-2.019,14.625-6.058L171.268,369.98
+                                       ></path>
+                                    </g>
+                                 </g>
+                                 <g>
+                                    <g>
+                                       <path
+                                          class="mag_glass"
+                                          fill="currentColor"
+                                          d="M6.057,505.942c4.038,4.039,9.332,6.058,14.625,6.058s10.587-2.019,14.625-6.058L171.268,369.98
                                                 c8.076-8.076,8.076-21.172,0-29.248c-8.076-8.078-21.172-8.078-29.249,0L6.057,476.693
                                                 C-2.019,484.77-2.019,497.865,6.057,505.942z"
-                                                    ></path>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <form class="search_form" id="search_form">
-                                    <input type="search" class="search_content_input" name="" id="" />
-                                </form>
-                            </div>
+                                       ></path>
+                                    </g>
+                                 </g>
+                              </g>
+                           </svg>
                         </div>
-                    </div>
-                </nav>
-            </header>
-            <!-- End: Header -->
+                        <form class="search_form" id="search_form">
+                           <input type="search" class="search_content_input" name="" id="" />
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+         </header>
+         <!-- End: Header -->
 
-            <!-- Begin: Home -->
-            <div class="home">
-                <div class="home_container">
-                    <div class="home_slider">
-                        <div class="slider_stage_outer">
-                            <div class="slider_stage">
-                                <div class="slider_item active">
-                                    <div class="slider_background"></div>
-                                    <div class="slider_content">
-                                        <div class="slider_content_inner">
-                                            <h1>discover</h1>
-                                            <h1>the world</h1>
-                                            <div class="btn slider_btn">
-                                                <div class="btn_background"></div>
-                                                <a href="#">
-                                                    explore now
-                                                    <span></span>
-                                                    <span></span>
-                                                    <span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider_item">
-                                    <div class="slider_background"></div>
-                                    <div class="slider_content">
-                                        <div class="slider_content_inner">
-                                            <h1>discover</h1>
-                                            <h1>the world</h1>
-                                            <div class="btn slider_btn">
-                                                <div class="btn_background"></div>
-                                                <a href="#">
-                                                    explore now
-                                                    <span></span>
-                                                    <span></span>
-                                                    <span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider_item">
-                                    <div class="slider_background"></div>
-                                    <div class="slider_content">
-                                        <div class="slider_content_inner">
-                                            <h1>discover</h1>
-                                            <h1>the world</h1>
-                                            <div class="btn slider_btn">
-                                                <div class="btn_background"></div>
-                                                <a href="#">
-                                                    explore now
-                                                    <span></span>
-                                                    <span></span>
-                                                    <span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+         <!-- Begin: Home -->
+         <div class="home">
+            <div class="home_container">
+               <div class="home_slider">
+                  <div class="slider_stage_outer">
+                     <div class="slider_stage">
+                        <div class="slider_item active">
+                           <div class="slider_background"></div>
+                           <div class="slider_content">
+                              <div class="slider_content_inner">
+                                 <h1>discover</h1>
+                                 <h1>the world</h1>
+                                 <div class="btn slider_btn">
+                                    <div class="btn_background"></div>
+                                    <a href="#">
+                                       explore now
+                                       <span></span>
+                                       <span></span>
+                                       <span></span>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                    <div class="slider_nav home_slider_prev">
-                        <svg
-                            version="1.1"
-                            id="Layer_2"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            x="0px"
-                            y="0px"
-                            width="28px"
-                            height="33px"
-                            viewBox="0 0 28 33"
-                            enable-background="new 0 0 28 33"
-                            xml:space="preserve"
-                        >
-                            <defs>
-                                <linearGradient id="home_grad_prev">
-                                    <stop offset="0%" stop-color="#fa9e1b"></stop>
-                                    <stop offset="100%" stop-color="#8d4fff"></stop>
-                                </linearGradient>
-                            </defs>
-                            <path
-                                class="nav_path"
-                                fill="#F3F6F9"
-                                d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+                        <div class="slider_item">
+                           <div class="slider_background"></div>
+                           <div class="slider_content">
+                              <div class="slider_content_inner">
+                                 <h1>discover</h1>
+                                 <h1>the world</h1>
+                                 <div class="btn slider_btn">
+                                    <div class="btn_background"></div>
+                                    <a href="#">
+                                       explore now
+                                       <span></span>
+                                       <span></span>
+                                       <span></span>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="slider_item">
+                           <div class="slider_background"></div>
+                           <div class="slider_content">
+                              <div class="slider_content_inner">
+                                 <h1>discover</h1>
+                                 <h1>the world</h1>
+                                 <div class="btn slider_btn">
+                                    <div class="btn_background"></div>
+                                    <a href="#">
+                                       explore now
+                                       <span></span>
+                                       <span></span>
+                                       <span></span>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="slider_nav home_slider_prev">
+                  <svg
+                     version="1.1"
+                     id="Layer_2"
+                     xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     x="0px"
+                     y="0px"
+                     width="28px"
+                     height="33px"
+                     viewBox="0 0 28 33"
+                     enable-background="new 0 0 28 33"
+                     xml:space="preserve"
+                  >
+                     <defs>
+                        <linearGradient id="home_grad_prev">
+                           <stop offset="0%" stop-color="#fa9e1b"></stop>
+                           <stop offset="100%" stop-color="#8d4fff"></stop>
+                        </linearGradient>
+                     </defs>
+                     <path
+                        class="nav_path"
+                        fill="#F3F6F9"
+                        d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
                         M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
                         C22.545,2,26,5.541,26,9.909V23.091z"
-                            ></path>
-                            <polygon
-                                class="nav_arrow"
-                                fill="#F3F6F9"
-                                points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219 
+                     ></path>
+                     <polygon
+                        class="nav_arrow"
+                        fill="#F3F6F9"
+                        points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219 
                         11.042,18.219 "
-                            ></polygon>
-                        </svg>
-                    </div>
-                    <div class="slider_nav home_slider_next">
-                        <svg
-                            version="1.1"
-                            id="Layer_3"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            x="0px"
-                            y="0px"
-                            width="28px"
-                            height="33px"
-                            viewBox="0 0 28 33"
-                            enable-background="new 0 0 28 33"
-                            xml:space="preserve"
-                        >
-                            <defs>
-                                <linearGradient id="home_grad_next">
-                                    <stop offset="0%" stop-color="#fa9e1b"></stop>
-                                    <stop offset="100%" stop-color="#8d4fff"></stop>
-                                </linearGradient>
-                            </defs>
-                            <path
-                                class="nav_path"
-                                fill="#F3F6F9"
-                                d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+                     ></polygon>
+                  </svg>
+               </div>
+               <div class="slider_nav home_slider_next">
+                  <svg
+                     version="1.1"
+                     id="Layer_3"
+                     xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     x="0px"
+                     y="0px"
+                     width="28px"
+                     height="33px"
+                     viewBox="0 0 28 33"
+                     enable-background="new 0 0 28 33"
+                     xml:space="preserve"
+                  >
+                     <defs>
+                        <linearGradient id="home_grad_next">
+                           <stop offset="0%" stop-color="#fa9e1b"></stop>
+                           <stop offset="100%" stop-color="#8d4fff"></stop>
+                        </linearGradient>
+                     </defs>
+                     <path
+                        class="nav_path"
+                        fill="#F3F6F9"
+                        d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
                     M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
                     C22.545,2,26,5.541,26,9.909V23.091z"
-                            ></path>
-                            <polygon
-                                class="nav_arrow"
-                                fill="#F3F6F9"
-                                points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554 
+                     ></path>
+                     <polygon
+                        class="nav_arrow"
+                        fill="#F3F6F9"
+                        points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554 
                     17.046,15.554 "
-                            ></polygon>
-                        </svg>
-                    </div>
-                    <div class="home_slider_dots">
-                        <ul class="slider_custom_dots">
-                            <li class="slider_custom_dot active">01.</li>
-                            <li class="slider_custom_dot">02.</li>
-                            <li class="slider_custom_dot">03.</li>
-                        </ul>
-                    </div>
-                </div>
+                     ></polygon>
+                  </svg>
+               </div>
+               <div class="home_slider_dots">
+                  <ul class="slider_custom_dots">
+                     <li class="slider_custom_dot active">01.</li>
+                     <li class="slider_custom_dot">02.</li>
+                     <li class="slider_custom_dot">03.</li>
+                  </ul>
+               </div>
             </div>
-            <!-- End: Home -->
+         </div>
+         <!-- End: Home -->
 
-            <!-- Begin: Search -->
-            <div class="search">
-                <div class="grid fill-height">
-                    <div class="row fill-height">
-                        <div class="col fill-height">
-                            <div class="search_tabs_container">
-                                <div class="search_tabs">
-                                    <div class="search_tab active">
-                                        <img src="/assets/images/suitcase.png" alt="" />
-                                        <span>Hotels</span>
-                                    </div>
-                                    <div class="search_tab">
-                                        <img src="/assets/images/bus.png" alt="" />
-                                        <span>CAR RENTALS</span>
-                                    </div>
-                                    <div class="search_tab">
-                                        <img src="/assets/images/departure.png" alt="" />
-                                        <span>FLIGHTS</span>
-                                    </div>
-                                    <div class="search_tab">
-                                        <img src="/assets/images/island.png" alt="" />
-                                        <span>TRIPS</span>
-                                    </div>
-                                    <div class="search_tab">
-                                        <img src="/assets/images/cruise.png" alt="" />
-                                        <span>CRUISES</span>
-                                    </div>
-                                    <div class="search_tab">
-                                        <img src="/assets/images/diving.png" alt="" />
-                                        <span>ACTIVITIES</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="search_panel">
-                                <form action="#" id="search_form_1">
-                                    <div class="row gut g-5">
-                                        <div class="col lg-4 search_item">
-                                            <div>DESTINATION</div>
-                                            <input type="text" class="search_panel_input" />
-                                        </div>
-                                        <div class="col lg-2 search_item">
-                                            <div>check in</div>
-                                            <input type="text" placeholder="YYYY-MM-DD" class="search_panel_input" />
-                                        </div>
-                                        <div class="col lg-2 search_item">
-                                            <div>check out</div>
-                                            <input type="text" placeholder="YYYY-MM-DD" class="search_panel_input" />
-                                        </div>
-                                        <div class="col lg-1 search_item">
-                                            <div>adults</div>
-                                            <select
-                                                name="adults"
-                                                id="adults_1"
-                                                class="dropdown_item_select search_panel_input"
-                                            >
-                                                <option>01</option>
-                                                <option>02</option>
-                                                <option>03</option>
-                                            </select>
-                                        </div>
-                                        <div class="col lg-1 search_item">
-                                            <div>children</div>
-                                            <select
-                                                name="children"
-                                                id="children_1"
-                                                class="dropdown_item_select search_panel_input"
-                                            >
-                                                <option>01</option>
-                                                <option>02</option>
-                                                <option>03</option>
-                                            </select>
-                                        </div>
-                                        <div class="col lg-2 search_btn_wrap">
-                                            <div class="btn btn_black search_btn">
-                                                <div class="btn_background"></div>
-                                                <a href="#">
-                                                    search
-                                                    <span></span>
-                                                    <span></span>
-                                                    <span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
+         <!-- Begin: Search -->
+         <div class="search">
+            <div class="grid fill-height">
+               <div class="row fill-height">
+                  <div class="col fill-height">
+                     <div class="search_tabs_container">
+                        <div class="search_tabs">
+                           <div class="search_tab active">
+                              <img src="/assets/images/suitcase.png" alt="" />
+                              <span>Hotels</span>
+                           </div>
+                           <div class="search_tab">
+                              <img src="/assets/images/bus.png" alt="" />
+                              <span>CAR RENTALS</span>
+                           </div>
+                           <div class="search_tab">
+                              <img src="/assets/images/departure.png" alt="" />
+                              <span>FLIGHTS</span>
+                           </div>
+                           <div class="search_tab">
+                              <img src="/assets/images/island.png" alt="" />
+                              <span>TRIPS</span>
+                           </div>
+                           <div class="search_tab">
+                              <img src="/assets/images/cruise.png" alt="" />
+                              <span>CRUISES</span>
+                           </div>
+                           <div class="search_tab">
+                              <img src="/assets/images/diving.png" alt="" />
+                              <span>ACTIVITIES</span>
+                           </div>
                         </div>
-                    </div>
-                </div>
+                     </div>
+                     <div class="search_panel">
+                        <form action="#" id="search_form_1">
+                           <div class="row gut g-5">
+                              <div class="col lg-4 search_item">
+                                 <div>DESTINATION</div>
+                                 <input type="text" class="search_panel_input" />
+                              </div>
+                              <div class="col lg-2 search_item">
+                                 <div>check in</div>
+                                 <input type="text" placeholder="YYYY-MM-DD" class="search_panel_input" />
+                              </div>
+                              <div class="col lg-2 search_item">
+                                 <div>check out</div>
+                                 <input type="text" placeholder="YYYY-MM-DD" class="search_panel_input" />
+                              </div>
+                              <div class="col lg-1 search_item">
+                                 <div>adults</div>
+                                 <select name="adults" id="adults_1" class="dropdown_item_select search_panel_input">
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                 </select>
+                              </div>
+                              <div class="col lg-1 search_item">
+                                 <div>children</div>
+                                 <select
+                                    name="children"
+                                    id="children_1"
+                                    class="dropdown_item_select search_panel_input"
+                                 >
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                 </select>
+                              </div>
+                              <div class="col lg-2 search_btn_wrap">
+                                 <div class="btn btn_black search_btn">
+                                    <div class="btn_background"></div>
+                                    <a href="#">
+                                       search
+                                       <span></span>
+                                       <span></span>
+                                       <span></span>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <!-- End: Search -->
+         </div>
+         <!-- End: Search -->
 
-            <!-- Begin: Intro -->
-            <div class="intro">
-                <div class="grid">
-                    <div class="row">
-                        <div class="col">
-                            <h2 class="intro_title text-center">We have the best tours</h2>
+         <!-- Begin: Intro -->
+         <div class="intro">
+            <div class="grid">
+               <div class="row">
+                  <div class="col">
+                     <h2 class="intro_title text-center">We have the best tours</h2>
+                  </div>
+               </div>
+               <div class="row intro_text_wrap">
+                  <div class="col lg-10">
+                     <p class="intro_text text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse
+                        potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.
+                     </p>
+                  </div>
+               </div>
+               <div class="row intro_items">
+                  <div class="col lg-4 md-12 sm-12">
+                     <div class="intro_item">
+                        <div class="intro_item_overlay"></div>
+                        <div class="intro_item_background"></div>
+                        <div class="intro_item_content">
+                           <div class="intro_date">May 25th - June 01st</div>
+                           <div class="intro_center text-center">
+                              <h1>Mauritius</h1>
+                              <div class="intro_price">From $1450</div>
+                              <div class="rating rating_4">
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                              </div>
+                           </div>
+                           <div class="btn intro_btn">
+                              <div class="btn_background"></div>
+                              <a href="#">
+                                 see more
+                                 <span></span>
+                                 <span></span>
+                                 <span></span>
+                              </a>
+                           </div>
                         </div>
-                    </div>
-                    <div class="row intro_text_wrap">
-                        <div class="col lg-10">
-                            <p class="intro_text text-center">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.
-                                Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.
-                            </p>
+                     </div>
+                  </div>
+                  <div class="col lg-4 md-12 sm-12">
+                     <div class="intro_item">
+                        <div class="intro_item_overlay"></div>
+                        <div class="intro_item_background"></div>
+                        <div class="intro_item_content">
+                           <div class="intro_date">May 25th - June 01st</div>
+                           <div class="intro_center text-center">
+                              <h1>Greece</h1>
+                              <div class="intro_price">From $1450</div>
+                              <div class="rating rating_4">
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                              </div>
+                           </div>
+                           <div class="btn intro_btn">
+                              <div class="btn_background"></div>
+                              <a href="#">
+                                 see more
+                                 <span></span>
+                                 <span></span>
+                                 <span></span>
+                              </a>
+                           </div>
                         </div>
-                    </div>
-                    <div class="row intro_items">
-                        <div class="col lg-4 md-12 sm-12">
-                            <div class="intro_item">
-                                <div class="intro_item_overlay"></div>
-                                <div class="intro_item_background"></div>
-                                <div class="intro_item_content">
-                                    <div class="intro_date">May 25th - June 01st</div>
-                                    <div class="intro_center text-center">
-                                        <h1>Mauritius</h1>
-                                        <div class="intro_price">From $1450</div>
-                                        <div class="rating rating_4">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <div class="btn intro_btn">
-                                        <div class="btn_background"></div>
-                                        <a href="#">
-                                            see more
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                     </div>
+                  </div>
+                  <div class="col lg-4 md-12 sm-12">
+                     <div class="intro_item">
+                        <div class="intro_item_overlay"></div>
+                        <div class="intro_item_background"></div>
+                        <div class="intro_item_content">
+                           <div class="intro_date">May 25th - June 01st</div>
+                           <div class="intro_center text-center">
+                              <h1>Scotland</h1>
+                              <div class="intro_price">From $1450</div>
+                              <div class="rating rating_4">
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                              </div>
+                           </div>
+                           <div class="btn intro_btn">
+                              <div class="btn_background"></div>
+                              <a href="#">
+                                 see more
+                                 <span></span>
+                                 <span></span>
+                                 <span></span>
+                              </a>
+                           </div>
                         </div>
-                        <div class="col lg-4 md-12 sm-12">
-                            <div class="intro_item">
-                                <div class="intro_item_overlay"></div>
-                                <div class="intro_item_background"></div>
-                                <div class="intro_item_content">
-                                    <div class="intro_date">May 25th - June 01st</div>
-                                    <div class="intro_center text-center">
-                                        <h1>Greece</h1>
-                                        <div class="intro_price">From $1450</div>
-                                        <div class="rating rating_4">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <div class="btn intro_btn">
-                                        <div class="btn_background"></div>
-                                        <a href="#">
-                                            see more
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col lg-4 md-12 sm-12">
-                            <div class="intro_item">
-                                <div class="intro_item_overlay"></div>
-                                <div class="intro_item_background"></div>
-                                <div class="intro_item_content">
-                                    <div class="intro_date">May 25th - June 01st</div>
-                                    <div class="intro_center text-center">
-                                        <h1>Scotland</h1>
-                                        <div class="intro_price">From $1450</div>
-                                        <div class="rating rating_4">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <div class="btn intro_btn">
-                                        <div class="btn_background"></div>
-                                        <a href="#">
-                                            see more
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <!-- End: Intro -->
+         </div>
+         <!-- End: Intro -->
 
-            <!-- Begin: cta -->
-            <div class="cta">
-                <div class="cta_background"></div>
-                <div class="grid">
-                    <div class="row">
-                        <div class="col">
-                            <div class="cta_slider_container">
-                                <div class="cta_slider">
-                                    <div class="cta_stage_outer">
-                                        <div class="cta_stage">
-                                            <div class="cta_slider_item">
-                                                <h2 class="cta_title">"maldives deluxe package"</h2>
-                                                <div class="rating_r rating_4">
-                                                    <i class="cta_rating_item fa-solid fa-star"></i>
-                                                    <i class="cta_rating_item fa-solid fa-star"></i>
-                                                    <i class="cta_rating_item fa-solid fa-star"></i>
-                                                    <i class="cta_rating_item fa-solid fa-star"></i>
-                                                    <i class="cta_rating_item fa-solid fa-star"></i>
-                                                </div>
-                                                <p class="cta_text">
-                                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu
-                                                    convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae
-                                                    cursus mi hendrerit nec. Proin bibendum, augue faucibus tincidunt
-                                                    ultrices, tortor augue gravida lectus, et efficitur enim justo vel
-                                                    ligula."
-                                                </p>
-                                                <div class="btn cta_btn">
-                                                    <div class="btn_background"></div>
-                                                    <a href="#">
-                                                        explore now
-                                                        <span></span>
-                                                        <span></span>
-                                                        <span></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="cta_slider_item">
-                                                <h2 class="cta_title">"maldives deluxe package"</h2>
-                                                <div class="rating_r rating_4">
-                                                    <i class="cta_rating_item fa-solid fa-star"></i>
-                                                    <i class="cta_rating_item fa-solid fa-star"></i>
-                                                    <i class="cta_rating_item fa-solid fa-star"></i>
-                                                    <i class="cta_rating_item fa-solid fa-star"></i>
-                                                    <i class="cta_rating_item fa-solid fa-star"></i>
-                                                </div>
-                                                <p class="cta_text">
-                                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu
-                                                    convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae
-                                                    cursus mi hendrerit nec. Proin bibendum, augue faucibus tincidunt
-                                                    ultrices, tortor augue gravida lectus, et efficitur enim justo vel
-                                                    ligula."
-                                                </p>
-                                                <div class="btn cta_btn">
-                                                    <div class="btn_background"></div>
-                                                    <a href="#">
-                                                        explore now
-                                                        <span></span>
-                                                        <span></span>
-                                                        <span></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="cta_slider_item">
-                                                <h2 class="cta_title">"maldives deluxe package"</h2>
-                                                <div class="rating_r rating_4">
-                                                    <i class="cta_rating_item fa-solid fa-star"></i>
-                                                    <i class="cta_rating_item fa-solid fa-star"></i>
-                                                    <i class="cta_rating_item fa-solid fa-star"></i>
-                                                    <i class="cta_rating_item fa-solid fa-star"></i>
-                                                    <i class="cta_rating_item fa-solid fa-star"></i>
-                                                </div>
-                                                <p class="cta_text">
-                                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu
-                                                    convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae
-                                                    cursus mi hendrerit nec. Proin bibendum, augue faucibus tincidunt
-                                                    ultrices, tortor augue gravida lectus, et efficitur enim justo vel
-                                                    ligula."
-                                                </p>
-                                                <div class="btn cta_btn">
-                                                    <div class="btn_background"></div>
-                                                    <a href="#">
-                                                        explore now
-                                                        <span></span>
-                                                        <span></span>
-                                                        <span></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
+         <!-- Begin: cta -->
+         <div class="cta">
+            <div class="cta_background"></div>
+            <div class="grid">
+               <div class="row">
+                  <div class="col">
+                     <div class="cta_slider_container">
+                        <div class="cta_slider">
+                           <div class="cta_stage_outer">
+                              <div class="cta_stage">
+                                 <div class="cta_slider_item">
+                                    <h2 class="cta_title">"maldives deluxe package"</h2>
+                                    <div class="rating_r rating_4">
+                                       <i class="cta_rating_item fa-solid fa-star"></i>
+                                       <i class="cta_rating_item fa-solid fa-star"></i>
+                                       <i class="cta_rating_item fa-solid fa-star"></i>
+                                       <i class="cta_rating_item fa-solid fa-star"></i>
+                                       <i class="cta_rating_item fa-solid fa-star"></i>
                                     </div>
-                                </div>
-                                <div class="slider_nav cta_slider_prev">
-                                    <svg
-                                        version="1.1"
-                                        id="Layer_4"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        x="0px"
-                                        y="0px"
-                                        width="28px"
-                                        height="33px"
-                                        viewBox="0 0 28 33"
-                                        enable-background="new 0 0 28 33"
-                                        xml:space="preserve"
-                                    >
-                                        <defs>
-                                            <linearGradient id="cta_grad_prev">
-                                                <stop offset="0%" stop-color="#fa9e1b"></stop>
-                                                <stop offset="100%" stop-color="#8d4fff"></stop>
-                                            </linearGradient>
-                                        </defs>
-                                        <path
-                                            class="nav_path"
-                                            fill="#F3F6F9"
-                                            d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+                                    <p class="cta_text">
+                                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis
+                                       tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit
+                                       nec. Proin bibendum, augue faucibus tincidunt ultrices, tortor augue gravida
+                                       lectus, et efficitur enim justo vel ligula."
+                                    </p>
+                                    <div class="btn cta_btn">
+                                       <div class="btn_background"></div>
+                                       <a href="#">
+                                          explore now
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div class="cta_slider_item">
+                                    <h2 class="cta_title">"maldives deluxe package"</h2>
+                                    <div class="rating_r rating_4">
+                                       <i class="cta_rating_item fa-solid fa-star"></i>
+                                       <i class="cta_rating_item fa-solid fa-star"></i>
+                                       <i class="cta_rating_item fa-solid fa-star"></i>
+                                       <i class="cta_rating_item fa-solid fa-star"></i>
+                                       <i class="cta_rating_item fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="cta_text">
+                                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis
+                                       tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit
+                                       nec. Proin bibendum, augue faucibus tincidunt ultrices, tortor augue gravida
+                                       lectus, et efficitur enim justo vel ligula."
+                                    </p>
+                                    <div class="btn cta_btn">
+                                       <div class="btn_background"></div>
+                                       <a href="#">
+                                          explore now
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div class="cta_slider_item">
+                                    <h2 class="cta_title">"maldives deluxe package"</h2>
+                                    <div class="rating_r rating_4">
+                                       <i class="cta_rating_item fa-solid fa-star"></i>
+                                       <i class="cta_rating_item fa-solid fa-star"></i>
+                                       <i class="cta_rating_item fa-solid fa-star"></i>
+                                       <i class="cta_rating_item fa-solid fa-star"></i>
+                                       <i class="cta_rating_item fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="cta_text">
+                                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis
+                                       tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit
+                                       nec. Proin bibendum, augue faucibus tincidunt ultrices, tortor augue gravida
+                                       lectus, et efficitur enim justo vel ligula."
+                                    </p>
+                                    <div class="btn cta_btn">
+                                       <div class="btn_background"></div>
+                                       <a href="#">
+                                          explore now
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="slider_nav cta_slider_prev">
+                           <svg
+                              version="1.1"
+                              id="Layer_4"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              x="0px"
+                              y="0px"
+                              width="28px"
+                              height="33px"
+                              viewBox="0 0 28 33"
+                              enable-background="new 0 0 28 33"
+                              xml:space="preserve"
+                           >
+                              <defs>
+                                 <linearGradient id="cta_grad_prev">
+                                    <stop offset="0%" stop-color="#fa9e1b"></stop>
+                                    <stop offset="100%" stop-color="#8d4fff"></stop>
+                                 </linearGradient>
+                              </defs>
+                              <path
+                                 class="nav_path"
+                                 fill="#F3F6F9"
+                                 d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
                                     M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
                                     C22.545,2,26,5.541,26,9.909V23.091z"
-                                        ></path>
-                                        <polygon
-                                            class="nav_arrow"
-                                            fill="#F3F6F9"
-                                            points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219 
+                              ></path>
+                              <polygon
+                                 class="nav_arrow"
+                                 fill="#F3F6F9"
+                                 points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219 
                                     11.042,18.219 "
-                                        ></polygon>
-                                    </svg>
-                                </div>
-                                <div class="slider_nav cta_slider_next">
-                                    <svg
-                                        version="1.1"
-                                        id="Layer_5"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        x="0px"
-                                        y="0px"
-                                        width="28px"
-                                        height="33px"
-                                        viewBox="0 0 28 33"
-                                        enable-background="new 0 0 28 33"
-                                        xml:space="preserve"
-                                    >
-                                        <defs>
-                                            <linearGradient id="cta_grad_next">
-                                                <stop offset="0%" stop-color="#fa9e1b"></stop>
-                                                <stop offset="100%" stop-color="#8d4fff"></stop>
-                                            </linearGradient>
-                                        </defs>
-                                        <path
-                                            class="nav_path"
-                                            fill="#F3F6F9"
-                                            d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+                              ></polygon>
+                           </svg>
+                        </div>
+                        <div class="slider_nav cta_slider_next">
+                           <svg
+                              version="1.1"
+                              id="Layer_5"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              x="0px"
+                              y="0px"
+                              width="28px"
+                              height="33px"
+                              viewBox="0 0 28 33"
+                              enable-background="new 0 0 28 33"
+                              xml:space="preserve"
+                           >
+                              <defs>
+                                 <linearGradient id="cta_grad_next">
+                                    <stop offset="0%" stop-color="#fa9e1b"></stop>
+                                    <stop offset="100%" stop-color="#8d4fff"></stop>
+                                 </linearGradient>
+                              </defs>
+                              <path
+                                 class="nav_path"
+                                 fill="#F3F6F9"
+                                 d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
                                 M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
                                 C22.545,2,26,5.541,26,9.909V23.091z"
-                                        ></path>
-                                        <polygon
-                                            class="nav_arrow"
-                                            fill="#F3F6F9"
-                                            points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554 
+                              ></path>
+                              <polygon
+                                 class="nav_arrow"
+                                 fill="#F3F6F9"
+                                 points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554 
                                 17.046,15.554 "
-                                        ></polygon>
-                                    </svg>
-                                </div>
-                            </div>
+                              ></polygon>
+                           </svg>
                         </div>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <!-- End: cta -->
+         </div>
+         <!-- End: cta -->
 
-            <!-- Begin: Offer -->
-            <div class="offers">
-                <div class="grid">
-                    <div class="row">
-                        <div class="col text-center">
-                            <h2 class="offers_title">THE BEST OFFERS WITH ROOMS</h2>
+         <!-- Begin: Offer -->
+         <div class="offers">
+            <div class="grid">
+               <div class="row">
+                  <div class="col text-center">
+                     <h2 class="offers_title">THE BEST OFFERS WITH ROOMS</h2>
+                  </div>
+               </div>
+               <div class="row offers_items">
+                  <div class="offers_col col lg-6">
+                     <div class="offers_item">
+                        <div class="row">
+                           <div class="col lg-6">
+                              <div class="offers_image_container">
+                                 <div class="offers_image_bg"></div>
+                                 <div class="offers_name">
+                                    <a href="#"> grand castle </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col lg-6">
+                              <div class="offers_content">
+                                 <div class="offers_price">
+                                    $70
+                                    <span>per night</span>
+                                 </div>
+                                 <div class="offers_rating rating_4">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                 </div>
+                              </div>
+                              <p class="offers_text">
+                                 Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur
+                                 adipiscing elit. Nullam eu convallis tortor.
+                              </p>
+                              <div class="offers_icons">
+                                 <ul class="offers_icon_list">
+                                    <li class="offers_icon_item">
+                                       <img src="/assets/images/post.png" alt="" />
+                                    </li>
+                                    <li class="offers_icon_item">
+                                       <img src="/assets/images/compass.png" alt="" />
+                                    </li>
+                                    <li class="offers_icon_item">
+                                       <img src="/assets/images/bicycle.png" alt="" />
+                                    </li>
+                                    <li class="offers_icon_item">
+                                       <img src="/assets/images/sailboat.png" alt="" />
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="offers_link">
+                                 <a href="#">read more</a>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                    <div class="row offers_items">
-                        <div class="offers_col col lg-6">
-                            <div class="offers_item">
-                                <div class="row">
-                                    <div class="col lg-6">
-                                        <div class="offers_image_container">
-                                            <div class="offers_image_bg"></div>
-                                            <div class="offers_name">
-                                                <a href="#"> grand castle </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col lg-6">
-                                        <div class="offers_content">
-                                            <div class="offers_price">
-                                                $70
-                                                <span>per night</span>
-                                            </div>
-                                            <div class="offers_rating rating_4">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p class="offers_text">
-                                            Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet,
-                                            consectetur adipiscing elit. Nullam eu convallis tortor.
-                                        </p>
-                                        <div class="offers_icons">
-                                            <ul class="offers_icon_list">
-                                                <li class="offers_icon_item">
-                                                    <img src="/assets/images/post.png" alt="" />
-                                                </li>
-                                                <li class="offers_icon_item">
-                                                    <img src="/assets/images/compass.png" alt="" />
-                                                </li>
-                                                <li class="offers_icon_item">
-                                                    <img src="/assets/images/bicycle.png" alt="" />
-                                                </li>
-                                                <li class="offers_icon_item">
-                                                    <img src="/assets/images/sailboat.png" alt="" />
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="offers_link">
-                                            <a href="#">read more</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                     </div>
+                  </div>
+                  <div class="offers_col col lg-6">
+                     <div class="offers_item">
+                        <div class="row">
+                           <div class="col lg-6">
+                              <div class="offers_image_container">
+                                 <div class="offers_image_bg"></div>
+                                 <div class="offers_name">
+                                    <a href="#"> turkey hills </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col lg-6">
+                              <div class="offers_content">
+                                 <div class="offers_price">
+                                    $50
+                                    <span>per night</span>
+                                 </div>
+                                 <div class="offers_rating rating_4">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                 </div>
+                              </div>
+                              <p class="offers_text">
+                                 Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur
+                                 adipiscing elit. Nullam eu convallis tortor.
+                              </p>
+                              <div class="offers_icons">
+                                 <ul class="offers_icon_list">
+                                    <li class="offers_icon_item">
+                                       <img src="/assets/images/post.png" alt="" />
+                                    </li>
+                                    <li class="offers_icon_item">
+                                       <img src="/assets/images/compass.png" alt="" />
+                                    </li>
+                                    <li class="offers_icon_item">
+                                       <img src="/assets/images/bicycle.png" alt="" />
+                                    </li>
+                                    <li class="offers_icon_item">
+                                       <img src="/assets/images/sailboat.png" alt="" />
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="offers_link">
+                                 <a href="#">read more</a>
+                              </div>
+                           </div>
                         </div>
-                        <div class="offers_col col lg-6">
-                            <div class="offers_item">
-                                <div class="row">
-                                    <div class="col lg-6">
-                                        <div class="offers_image_container">
-                                            <div class="offers_image_bg"></div>
-                                            <div class="offers_name">
-                                                <a href="#"> turkey hills </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col lg-6">
-                                        <div class="offers_content">
-                                            <div class="offers_price">
-                                                $50
-                                                <span>per night</span>
-                                            </div>
-                                            <div class="offers_rating rating_4">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p class="offers_text">
-                                            Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet,
-                                            consectetur adipiscing elit. Nullam eu convallis tortor.
-                                        </p>
-                                        <div class="offers_icons">
-                                            <ul class="offers_icon_list">
-                                                <li class="offers_icon_item">
-                                                    <img src="/assets/images/post.png" alt="" />
-                                                </li>
-                                                <li class="offers_icon_item">
-                                                    <img src="/assets/images/compass.png" alt="" />
-                                                </li>
-                                                <li class="offers_icon_item">
-                                                    <img src="/assets/images/bicycle.png" alt="" />
-                                                </li>
-                                                <li class="offers_icon_item">
-                                                    <img src="/assets/images/sailboat.png" alt="" />
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="offers_link">
-                                            <a href="#">read more</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                     </div>
+                  </div>
+                  <div class="offers_col col lg-6">
+                     <div class="offers_item">
+                        <div class="row">
+                           <div class="col lg-6">
+                              <div class="offers_image_container">
+                                 <div class="offers_image_bg"></div>
+                                 <div class="offers_name">
+                                    <a href="#"> island dream </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col lg-6">
+                              <div class="offers_content">
+                                 <div class="offers_price">
+                                    $90
+                                    <span>per night</span>
+                                 </div>
+                                 <div class="offers_rating rating_4">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                 </div>
+                              </div>
+                              <p class="offers_text">
+                                 Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur
+                                 adipiscing elit. Nullam eu convallis tortor.
+                              </p>
+                              <div class="offers_icons">
+                                 <ul class="offers_icon_list">
+                                    <li class="offers_icon_item">
+                                       <img src="/assets/images/post.png" alt="" />
+                                    </li>
+                                    <li class="offers_icon_item">
+                                       <img src="/assets/images/compass.png" alt="" />
+                                    </li>
+                                    <li class="offers_icon_item">
+                                       <img src="/assets/images/bicycle.png" alt="" />
+                                    </li>
+                                    <li class="offers_icon_item">
+                                       <img src="/assets/images/sailboat.png" alt="" />
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="offers_link">
+                                 <a href="#">read more</a>
+                              </div>
+                           </div>
                         </div>
-                        <div class="offers_col col lg-6">
-                            <div class="offers_item">
-                                <div class="row">
-                                    <div class="col lg-6">
-                                        <div class="offers_image_container">
-                                            <div class="offers_image_bg"></div>
-                                            <div class="offers_name">
-                                                <a href="#"> island dream </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col lg-6">
-                                        <div class="offers_content">
-                                            <div class="offers_price">
-                                                $90
-                                                <span>per night</span>
-                                            </div>
-                                            <div class="offers_rating rating_4">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p class="offers_text">
-                                            Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet,
-                                            consectetur adipiscing elit. Nullam eu convallis tortor.
-                                        </p>
-                                        <div class="offers_icons">
-                                            <ul class="offers_icon_list">
-                                                <li class="offers_icon_item">
-                                                    <img src="/assets/images/post.png" alt="" />
-                                                </li>
-                                                <li class="offers_icon_item">
-                                                    <img src="/assets/images/compass.png" alt="" />
-                                                </li>
-                                                <li class="offers_icon_item">
-                                                    <img src="/assets/images/bicycle.png" alt="" />
-                                                </li>
-                                                <li class="offers_icon_item">
-                                                    <img src="/assets/images/sailboat.png" alt="" />
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="offers_link">
-                                            <a href="#">read more</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                     </div>
+                  </div>
+                  <div class="offers_col col lg-6">
+                     <div class="offers_item">
+                        <div class="row">
+                           <div class="col lg-6">
+                              <div class="offers_image_container">
+                                 <div class="offers_image_bg"></div>
+                                 <div class="offers_name">
+                                    <a href="#"> travel light </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col lg-6">
+                              <div class="offers_content">
+                                 <div class="offers_price">
+                                    $30
+                                    <span>per night</span>
+                                 </div>
+                                 <div class="offers_rating rating_4">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                 </div>
+                              </div>
+                              <p class="offers_text">
+                                 Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur
+                                 adipiscing elit. Nullam eu convallis tortor.
+                              </p>
+                              <div class="offers_icons">
+                                 <ul class="offers_icon_list">
+                                    <li class="offers_icon_item">
+                                       <img src="/assets/images/post.png" alt="" />
+                                    </li>
+                                    <li class="offers_icon_item">
+                                       <img src="/assets/images/compass.png" alt="" />
+                                    </li>
+                                    <li class="offers_icon_item">
+                                       <img src="/assets/images/bicycle.png" alt="" />
+                                    </li>
+                                    <li class="offers_icon_item">
+                                       <img src="/assets/images/sailboat.png" alt="" />
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="offers_link">
+                                 <a href="#">read more</a>
+                              </div>
+                           </div>
                         </div>
-                        <div class="offers_col col lg-6">
-                            <div class="offers_item">
-                                <div class="row">
-                                    <div class="col lg-6">
-                                        <div class="offers_image_container">
-                                            <div class="offers_image_bg"></div>
-                                            <div class="offers_name">
-                                                <a href="#"> travel light </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col lg-6">
-                                        <div class="offers_content">
-                                            <div class="offers_price">
-                                                $30
-                                                <span>per night</span>
-                                            </div>
-                                            <div class="offers_rating rating_4">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p class="offers_text">
-                                            Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet,
-                                            consectetur adipiscing elit. Nullam eu convallis tortor.
-                                        </p>
-                                        <div class="offers_icons">
-                                            <ul class="offers_icon_list">
-                                                <li class="offers_icon_item">
-                                                    <img src="/assets/images/post.png" alt="" />
-                                                </li>
-                                                <li class="offers_icon_item">
-                                                    <img src="/assets/images/compass.png" alt="" />
-                                                </li>
-                                                <li class="offers_icon_item">
-                                                    <img src="/assets/images/bicycle.png" alt="" />
-                                                </li>
-                                                <li class="offers_icon_item">
-                                                    <img src="/assets/images/sailboat.png" alt="" />
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="offers_link">
-                                            <a href="#">read more</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <!-- End: offers -->
+         </div>
+         <!-- End: offers -->
 
-            <!-- Begin: Testimonials -->
-            <div class="testimonials"></div>
-            <!-- End: Testimonials -->
+         <!-- Begin: Testimonials -->
+         <div class="testimonials">
+            <div class="test_border"></div>
+            <div class="grid">
+               <div class="row">
+                  <div class="col text-center">
+                     <h2 class="testimonials_title">WHAT OUR CLIENTS SAY ABOUT US</h2>
+                  </div>
+               </div>
+               <div class="testimonials_items">
+                  <div class="row">
+                     <div class="testimonials_item col lg-4">
+                        <div class="test_item_bg">
+                           <img src="/assets/images/test_1.jpg" alt="" />
+                        </div>
+                        <div class="test_item_icon">
+                           <img src="/assets/images/backpack.png" alt="" />
+                        </div>
+                        <div class="test_item_content">
+                           <div class="test_content_info">
+                              <h2 class="test_info_name">carla smith</h2>
+                              <p class="test_info_date">May 24, 2017</p>
+                           </div>
+                           <h2 class="test_content_quote">" Best holliday ever "</h2>
+                           <p class="test_content_text">
+                              Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi
+                              hendrerit nec.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="testimonials_item col lg-4">
+                        <div class="test_item_bg">
+                           <img src="/assets/images/test_2.jpg" alt="" />
+                        </div>
+                        <div class="test_item_icon">
+                           <img src="/assets/images/island_t.png" alt="" />
+                        </div>
+                        <div class="test_item_content">
+                           <div class="test_content_info">
+                              <h2 class="test_info_name">carla smith</h2>
+                              <p class="test_info_date">May 24, 2017</p>
+                           </div>
+                           <h2 class="test_content_quote">" Best holliday ever "</h2>
+                           <p class="test_content_text">
+                              Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi
+                              hendrerit nec.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="testimonials_item col lg-4">
+                        <div class="test_item_bg">
+                           <img src="/assets/images/test_3.jpg" alt="" />
+                        </div>
+                        <div class="test_item_icon">
+                           <img src="/assets/images/kayak.png" alt="" />
+                        </div>
+                        <div class="test_item_content">
+                           <div class="test_content_info">
+                              <h2 class="test_info_name">carla smith</h2>
+                              <p class="test_info_date">May 24, 2017</p>
+                           </div>
+                           <h2 class="test_content_quote">" Best holliday ever "</h2>
+                           <p class="test_content_text">
+                              Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi
+                              hendrerit nec.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- End: Testimonials -->
 
-            <!-- Begin: Trending -->
-            <div class="trending"></div>
-            <!-- End: Trending -->
+         <!-- Begin: Trending -->
+         <div class="trending">
+            <div class="grid">
+               <div class="row">
+                  <div class="col text-center">
+                     <h2 class="trending_title">TRENDING NOW</h2>
+                  </div>
+               </div>
+               <div class="trending_items">
+                  <div class="row">
+                     <div class="col lg-3 trending_item">
+                        <div class="trending_image">
+                           <img src="/assets/images/trend_1.png" alt="" />
+                        </div>
+                        <div class="trending_content">
+                           <div class="trending_content_title"><a href="#">grand hotel</a></div>
+                           <div class="trending_price">From $182</div>
+                           <div class="trending_location">madrid, spain</div>
+                        </div>
+                     </div>
+                     <div class="col lg-3 trending_item">
+                        <div class="trending_image">
+                           <img src="/assets/images/trend_2.png" alt="" />
+                        </div>
+                        <div class="trending_content">
+                           <div class="trending_content_title"><a href="#">mars hotel</a></div>
+                           <div class="trending_price">From $182</div>
+                           <div class="trending_location">madrid, spain</div>
+                        </div>
+                     </div>
+                     <div class="col lg-3 trending_item">
+                        <div class="trending_image">
+                           <img src="/assets/images/trend_3.png" alt="" />
+                        </div>
+                        <div class="trending_content">
+                           <div class="trending_content_title"><a href="#">queen hotel</a></div>
+                           <div class="trending_price">From $182</div>
+                           <div class="trending_location">madrid, spain</div>
+                        </div>
+                     </div>
+                     <div class="col lg-3 trending_item">
+                        <div class="trending_image">
+                           <img src="/assets/images/trend_4.png" alt="" />
+                        </div>
+                        <div class="trending_content">
+                           <div class="trending_content_title"><a href="#">mars hotel</a></div>
+                           <div class="trending_price">From $182</div>
+                           <div class="trending_location">madrid, spain</div>
+                        </div>
+                     </div>
+                     <div class="col lg-3 trending_item">
+                        <div class="trending_image">
+                           <img src="/assets/images/trend_5.png" alt="" />
+                        </div>
+                        <div class="trending_content">
+                           <div class="trending_content_title"><a href="#">grand hotel</a></div>
+                           <div class="trending_price">From $182</div>
+                           <div class="trending_location">madrid, spain</div>
+                        </div>
+                     </div>
+                     <div class="col lg-3 trending_item">
+                        <div class="trending_image">
+                           <img src="/assets/images/trend_6.png" alt="" />
+                        </div>
+                        <div class="trending_content">
+                           <div class="trending_content_title"><a href="#">mars hotel</a></div>
+                           <div class="trending_price">From $182</div>
+                           <div class="trending_location">madrid, spain</div>
+                        </div>
+                     </div>
+                     <div class="col lg-3 trending_item">
+                        <div class="trending_image">
+                           <img src="/assets/images/trend_7.png" alt="" />
+                        </div>
+                        <div class="trending_content">
+                           <div class="trending_content_title"><a href="#">queen hotel</a></div>
+                           <div class="trending_price">From $182</div>
+                           <div class="trending_location">madrid, spain</div>
+                        </div>
+                     </div>
+                     <div class="col lg-3 trending_item">
+                        <div class="trending_image">
+                           <img src="/assets/images/trend_8.png" alt="" />
+                        </div>
+                        <div class="trending_content">
+                           <div class="trending_content_title"><a href="#">mars hotel</a></div>
+                           <div class="trending_price">From $182</div>
+                           <div class="trending_location">madrid, spain</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- End: Trending -->
 
-            <!-- Begin: Contact -->
-            <div class="contact"></div>
-            <!-- End: Contact -->
+         <!-- Begin: Contact -->
+         <div class="contact"></div>
+         <!-- End: Contact -->
 
-            <!-- Begin: Footer -->
-            <footer class="footer"></footer>
-            <!-- End: Footer -->
+         <!-- Begin: Footer -->
+         <footer class="footer"></footer>
+         <!-- End: Footer -->
 
-            <!-- Begin: Copyright -->
-            <div class="copyright"></div>
-            <!-- End: Copyright -->
-        </div>
-        <script src="../assets/js/app.js"></script>
-    </body>
+         <!-- Begin: Copyright -->
+         <div class="copyright"></div>
+         <!-- End: Copyright -->
+      </div>
+      <script src="../assets/js/app.js"></script>
+   </body>
 </html>
