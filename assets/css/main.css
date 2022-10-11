@@ -849,7 +849,126 @@
 /* End: CTA */
 
 /* Offer */
-.offer {
+.offers {
+    width: 100%;
+    padding-top: 105px;
+    padding-bottom: 43px;
+    background: #f3f6f9;
+}
+
+.offers_title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #2d2c2c;
+    margin-top: -8px;
+    text-transform: uppercase;
+}
+
+.offers_col {
+    margin-bottom: 83px;
+}
+
+.offers_items {
+    margin-top: 90px;
+}
+
+.offers_image_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.offers_image_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.offers_name {
+    position: absolute;
+    left: 0;
+    bottom: 27px;
+    width: 180px;
+    height: 33px;
+    background: #fa9e1b;
+    overflow: hidden;
+}
+
+.offers_name a {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 35px;
+    padding-left: 22px;
+}
+
+.offers_content {
+}
+
+.offers_price {
+    display: inline-block;
+    font-size: 36px;
+    font-weight: 700;
+    color: #eda84a;
+    line-height: 25px;
+}
+
+.offers_price span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #929191;
+    margin-left: 12px;
+}
+
+.offers_rating i::before {
+    font-size: 1.2rem;
+    margin-right: 2px;
+}
+.offers_text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #929191;
+    margin-top: 16px;
+    line-height: 2;
+}
+
+.offers_icons {
+    margin-top: 17px;
+}
+
+.offers_icon_list {
+    display: flex;
+    align-items: center;
+}
+
+.offers_icon_item {
+    margin-right: 15px;
+}
+
+.offers_link {
+    margin-top: 54px;
+}
+
+.offers_link a {
+    font-size: 12px;
+    font-weight: 700;
+    color: #2d2c2c;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+.offers_link a:hover {
+    color: #fa9e1b;
 }
 /* End: Offer */
 

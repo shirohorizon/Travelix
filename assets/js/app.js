@@ -157,7 +157,7 @@ searchTabs.forEach(e => {
 })
 
 // set bg_intro
-const bgURLs = [
+const introBgURLs = [
     {
         src: '/assets/images/intro_1.jpg'
     },
@@ -169,8 +169,29 @@ const bgURLs = [
     },
 ]
 
-const introItems = document.querySelectorAll('.intro_item_background')
+const offerBgURLs = [
+    {
+        src: '/assets/images/offer_1.jpg'
+    },
+    {
+        src: '/assets/images/offer_2.jpg'
+    },
+    {
+        src: '/assets/images/offer_3.jpg'
+    },
+    {
+        src: '/assets/images/offer_4.jpg'
+    },
+]
 
-introItems.forEach((e, index) => {
-    e.style.backgroundImage = `url('${bgURLs[index].src}')`
-})
+const introItems = document.querySelectorAll('.intro_item_background')
+const offerItems = document.querySelectorAll('.offers_image_bg')
+
+const setBgImg = (items, bgURLs) => {
+    items.forEach((e, index) => {
+        e.style.backgroundImage = `url('${bgURLs[index].src}')`
+    })
+}
+
+setBgImg(introItems, introBgURLs)
+setBgImg(offerItems, offerBgURLs)
