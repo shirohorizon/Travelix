@@ -12,6 +12,17 @@ const handleGetScrollY = () => {
 
 window.addEventListener('scroll', handleGetScrollY)
 
+const headerMenuToggle = document.querySelector('.content_menu_toggle')
+const headerMenuClose = document.querySelector('.header_menu_close')
+const headerMenu = document.querySelector('.header_menu')
+
+headerMenuToggle.onclick = () => {
+    headerMenu.classList.add('active')
+}
+
+headerMenuClose.onclick = () => {
+    headerMenu.classList.remove('active')
+}
 // show and hide search form
 
 const searchIcon = document.querySelector('#Layer_1')

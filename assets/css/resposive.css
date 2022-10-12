@@ -1,0 +1,95 @@
+@media (max-width: 992px) {
+   .main_nav_container {
+      display: none;
+   }
+   .logo {
+      display: flex;
+      flex: 1;
+   }
+   .content_menu_toggle {
+      display: flex;
+   }
+   .header_menu {
+      display: flex;
+   }
+   .slider_content h1:first-child {
+      font-size: 72px;
+   }
+   .slider_content h1:nth-child(2) {
+      font-size: 60px;
+      margin-top: -18px;
+   }
+   .search {
+      width: 100%;
+      height: 100%;
+      padding: 100px 0;
+   }
+   .search_tabs_container {
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 100%;
+   }
+   .search_tabs {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+   }
+   .search_tab {
+      padding: 15px;
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+   }
+   .search_tab:first-child {
+      padding: 15px;
+      border-radius: unset;
+   }
+
+   .search_tab:last-child {
+      padding: 15px;
+      border-radius: unset;
+   }
+
+   .search_panel {
+      margin-top: 25px;
+   }
+
+   .search_btn_wrap {
+      margin-top: 50px;
+   }
+   .search_btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .search_item {
+      margin-top: 25px;
+   }
+
+   .intro_items {
+      margin-top: 9px;
+   }
+
+   .intro_item {
+      height: 810px;
+   }
+   .intro_item {
+      margin-top: 60px;
+   }
+
+   .offers_image_container {
+      height: 708px;
+      margin-bottom: 40px;
+   }
+
+   .footer_content {
+      margin-bottom: 60px;
+   }
+}
+
+@media (max-width: 768px) {
+}
